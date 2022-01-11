@@ -21,7 +21,7 @@ class _Page1State extends State<Page1> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsets.only(top: 20.h, bottom: 47.h),
+              padding: EdgeInsets.only(top: 20.h, bottom: 20.h),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -71,36 +71,40 @@ class _Page1State extends State<Page1> {
                 ],
               ),
             ),
-            Padding(
-              padding: EdgeInsets.only(left: 16.w, right: 16.w, bottom: 20.h),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    "2 Big Challenges",
-                    style: TextStyle(
-                      color: AppColors.customBlack,
-                      fontWeight: FontWeight.w600,
-                      fontSize: 24.sp,
-                    ),
-                  ),
-                  Text(
-                    "Ambitious person aren't you?",
-                    style: TextStyle(
-                      color: AppColors.customBlack,
-                      fontFamily: FontFamily.nunito,
-                      fontWeight: FontWeight.w600,
-                      fontSize: 16.sp,
-                    ),
-                  ),
-                ],
-              ),
-            ),
             Expanded(
               child: Padding(
-                padding: EdgeInsets.only(left: 16.w, right: 16.w),
+                padding: EdgeInsets.only(
+                  left: 16.w,
+                  right: 16.w,
+                ),
                 child: ListView(
                   children: [
+                    Padding(
+                      padding: EdgeInsets.only(
+                          left: 16.w, right: 16.w, bottom: 20.h, top: 27.h),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "2 Big Challenges",
+                            style: TextStyle(
+                              color: AppColors.customBlack,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 24.sp,
+                            ),
+                          ),
+                          Text(
+                            "Ambitious person aren't you?",
+                            style: TextStyle(
+                              color: AppColors.customBlack,
+                              fontFamily: FontFamily.nunito,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 16.sp,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                     SizedBox(
                       height: 200.h,
                       // width: 359.w,
@@ -225,6 +229,133 @@ class _Page1State extends State<Page1> {
                           ),
                         ],
                       ),
+                    ),
+                    ListView.separated(
+                      physics: const BouncingScrollPhysics(
+                          parent: AlwaysScrollableScrollPhysics()),
+                      scrollDirection: Axis.vertical,
+                      shrinkWrap: true,
+                      itemCount: 2,
+                      itemBuilder: (c, i) {
+                        return Card(
+                          color: AppColors.lightBlue,
+                          shadowColor: AppColors.shadowColor,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12.r),
+                          ),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsets.only(
+                                      left: 11.r,
+                                      right: 8.r,
+                                      top: 11.r,
+                                      bottom: 11.r,
+                                    ),
+                                    child: Center(
+                                      child: SvgPicture.asset(
+                                        AssetResources.BULB,
+                                        height: 53.r,
+                                        width: 53.r,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(child: Container()),
+                                  Padding(
+                                    padding: EdgeInsets.symmetric(
+                                        horizontal: 7.r, vertical: 7.r),
+                                    child: SvgPicture.asset(
+                                      AssetResources.MORE,
+                                      height: 24.r,
+                                      width: 24.r,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsets.only(
+                                      left: 11.r,
+                                      right: 11.r,
+                                    ),
+                                    child: const Divider(),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsets.only(
+                                      left: 11.r,
+                                      right: 8.r,
+                                      top: 3.r,
+                                      bottom: 3.r,
+                                    ),
+                                    child: Row(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        Padding(
+                                          padding: EdgeInsets.only(
+                                            left: 16.r,
+                                            right: 22.r,
+                                          ),
+                                          child: SvgPicture.asset(
+                                            AssetResources.CLOCK,
+                                            height: 24.r,
+                                            width: 24.r,
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                        Text(
+                                          "Deadline",
+                                          style: TextStyle(
+                                            color: AppColors.customBlack,
+                                            fontWeight: FontWeight.w300,
+                                            fontSize: 12.sp,
+                                          ),
+                                        ),
+                                        SizedBox(width: 16.w),
+                                        Expanded(
+                                          child: Text(
+                                            "06 January 2022",
+                                            style: TextStyle(
+                                              color: AppColors.customBlack,
+                                              fontWeight: FontWeight.w300,
+                                              fontSize: 12.sp,
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsets.only(
+                                            left: 16.r,
+                                            right: 0,
+                                          ),
+                                          child: SvgPicture.asset(
+                                            AssetResources.CARET_DOWN,
+                                            height: 24.r,
+                                            width: 24.r,
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        );
+                      },
+                      separatorBuilder: (BuildContext context, int index) {
+                        return SizedBox(
+                          width: 12.h,
+                        );
+                      },
                     ),
                   ],
                 ),
