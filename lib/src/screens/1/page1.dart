@@ -71,14 +71,14 @@ class _Page1State extends State<Page1> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(
-                  left: 16.w, right: 16.w, top: 29.w, bottom: 20.h),
+              padding: EdgeInsets.only(left: 16.w, right: 16.w, bottom: 20.h),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     "2 Big Challenges",
                     style: TextStyle(
-                      color: AppColors.purple,
+                      color: Colors.black,
                       fontWeight: FontWeight.w600,
                       fontSize: 24.sp,
                     ),
@@ -86,7 +86,7 @@ class _Page1State extends State<Page1> {
                   Text(
                     "Ambitious person aren't you?",
                     style: TextStyle(
-                      color: AppColors.purple,
+                      color: Colors.black,
                       fontWeight: FontWeight.w600,
                       fontSize: 16.sp,
                     ),
@@ -111,11 +111,11 @@ class _Page1State extends State<Page1> {
                           return ClipRRect(
                             borderRadius: BorderRadius.circular(10.r),
                             child: Container(
-                              margin: EdgeInsets.only(left: 16.w),
+                              // margin: EdgeInsets.only(left: 16.w),
                               width: 171.5.r,
                               height: 200.h,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(18.r),
+                              decoration: const BoxDecoration(
+                                // borderRadius: BorderRadius.circular(18.r),
                                 color: AppColors.lightBlue,
                               ),
                               child: Column(
@@ -123,28 +123,68 @@ class _Page1State extends State<Page1> {
                                     MainAxisAlignment.spaceAround,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Column(
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      SvgPicture.asset(
-                                        AssetResources.APP,
-                                        height: 24.r,
-                                        width: 24.r,
-                                        fit: BoxFit.cover,
-                                      ),
-                                      SizedBox(height: 4.h),
-                                      Text("Lifestyle"),
-                                      SizedBox(height: 4.h),
-                                      Text("Become a morning person"),
-                                    ],
+                                  Container(
+                                    margin: EdgeInsets.only(
+                                        left: 20.w, right: 20.w, top: 20.h),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        SvgPicture.asset(
+                                          AssetResources.TIMER,
+                                          height: 50.r,
+                                          width: 50.r,
+                                          fit: BoxFit.cover,
+                                        ),
+                                        SizedBox(height: 4.h),
+                                        Text(
+                                          "Lifestyle",
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.w600,
+                                            fontSize: 18.sp,
+                                          ),
+                                        ),
+                                        SizedBox(height: 4.h),
+                                        Text(
+                                          "Become a morning person",
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.w500,
+                                            fontSize: 12.sp,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
-                                  Column(
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      Text("Reminder"),
-                                      SizedBox(height: 2.h),
-                                      Text("Every Day"),
-                                    ],
+                                  Padding(
+                                    padding: EdgeInsets.only(
+                                        left: 20.w, right: 20.w, bottom: 12.h),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Reminder",
+                                          style: TextStyle(
+                                            color: AppColors.grey2,
+                                            fontWeight: FontWeight.w300,
+                                            fontSize: 10.sp,
+                                          ),
+                                        ),
+                                        SizedBox(height: 2.h),
+                                        Text(
+                                          "Every Day",
+                                          style: TextStyle(
+                                            color: AppColors.grey2,
+                                            fontWeight: FontWeight.w600,
+                                            fontSize: 10.sp,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   )
                                 ],
                               ),

@@ -101,25 +101,45 @@ flutter:
   fonts:
     - family: Poppins
       fonts:
-        - asset: fonts/Poppins-Black.ttf
-        - asset: fonts/Poppins-BlackItalic.ttf
-        - asset: fonts/Poppins-Bold.ttf
-        - asset: fonts/Poppins-BoldItalic.ttf
-        - asset: fonts/Poppins-ExtraBold.ttf
-        - asset: fonts/Poppins-ExtraBoldItalic.ttf
-        - asset: fonts/Poppins-ExtraLight.ttf
-        - asset: fonts/Poppins-ExtraLightItalic.ttf
-        - asset: fonts/Poppins-Italic.ttf
+        - asset: assets/fonts/poppins/Poppins-Black.ttf
+        - asset: assets/fonts/poppins/Poppins-BlackItalic.ttf
+        - asset: assets/fonts/poppins/Poppins-Bold.ttf
+        - asset: assets/fonts/poppins/Poppins-BoldItalic.ttf
+        - asset: assets/fonts/poppins/Poppins-ExtraBold.ttf
+        - asset: assets/fonts/poppins/Poppins-ExtraBoldItalic.ttf
+        - asset: assets/fonts/poppins/Poppins-ExtraLight.ttf
+        - asset: assets/fonts/poppins/Poppins-ExtraLightItalic.ttf
+        - asset: assets/fonts/poppins/Poppins-Italic.ttf
           style: italic
-        - asset: fonts/Poppins-Light.ttf
-        - asset: fonts/Poppins-LightItalic.ttf
-        - asset: fonts/Poppins-Medium.ttf
-        - asset: fonts/Poppins-MediumItalic.ttf
-        - asset: fonts/Poppins-Regular.ttf
-        - asset: fonts/Poppins-SemiBold.ttf
-        - asset: fonts/Poppins-SemiBoldItalic.ttf
-        - asset: fonts/Poppins-Thin.ttf
-        - asset: fonts/Poppins-ThinItalic.ttf
+        - asset: assets/fonts/poppins/Poppins-Light.ttf
+        - asset: assets/fonts/poppins/Poppins-LightItalic.ttf
+        - asset: assets/fonts/poppins/Poppins-Medium.ttf
+        - asset: assets/fonts/poppins/Poppins-MediumItalic.ttf
+        - asset: assets/fonts/poppins/Poppins-Regular.ttf
+        - asset: assets/fonts/poppins/Poppins-SemiBold.ttf
+        - asset: assets/fonts/poppins/Poppins-SemiBoldItalic.ttf
+        - asset: assets/fonts/poppins/Poppins-Thin.ttf
+        - asset: assets/fonts/poppins/Poppins-ThinItalic.ttf
+
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/nunito/Nunito-Black.ttf
+        - asset: assets/fonts/nunito/Nunito-BlackItalic.ttf
+        - asset: assets/fonts/nunito/Nunito-Bold.ttf
+        - asset: assets/fonts/nunito/Nunito-BoldItalic.ttf
+        - asset: assets/fonts/nunito/Nunito-ExtraBold.ttf
+        - asset: assets/fonts/nunito/Nunito-ExtraBoldItalic.ttf
+        - asset: assets/fonts/nunito/Nunito-ExtraLight.ttf
+        - asset: assets/fonts/nunito/Nunito-ExtraLightItalic.ttf
+        - asset: assets/fonts/nunito/Nunito-Italic.ttf
+          style: italic
+        - asset: assets/fonts/nunito/Nunito-Light.ttf
+        - asset: assets/fonts/nunito/Nunito-LightItalic.ttf
+        - asset: assets/fonts/nunito/Nunito-Medium.ttf
+        - asset: assets/fonts/nunito/Nunito-MediumItalic.ttf
+        - asset: assets/fonts/nunito/Nunito-Regular.ttf
+        - asset: assets/fonts/nunito/Nunito-SemiBold.ttf
+        - asset: assets/fonts/nunito/Nunito-SemiBoldItalic.ttf
 
 
 flutter_intl:
