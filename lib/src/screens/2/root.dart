@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:life_goals_app/src/res/asset_images.dart';
 import 'package:life_goals_app/src/res/colors.dart';
 import 'package:life_goals_app/src/res/font_family.dart';
 
-class Page1 extends StatefulWidget {
-  const Page1({Key? key}) : super(key: key);
+class NewGoalRoot extends StatefulWidget {
+  const NewGoalRoot({Key? key}) : super(key: key);
 
   @override
-  _Page1State createState() => _Page1State();
+  _NewGoalRootState createState() => _NewGoalRootState();
 }
 
-class _Page1State extends State<Page1> {
+class _NewGoalRootState extends State<NewGoalRoot> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
