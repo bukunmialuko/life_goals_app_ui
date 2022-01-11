@@ -57,7 +57,7 @@ class _NewGoalRootState extends State<NewGoalRoot> {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(10.r),
                     child: Container(
-                      margin: EdgeInsets.only(left: 16.w),
+                      margin: EdgeInsets.only(right: 16.w),
                       width: 53.r,
                       height: 53.r,
                       decoration: BoxDecoration(
