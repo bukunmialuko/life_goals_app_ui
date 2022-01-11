@@ -115,8 +115,10 @@ class _NewGoalRootState extends State<NewGoalRoot> {
                       ),
                     ),
                     Padding(
-                      padding:
-                          EdgeInsets.only(left: 16.w, right: 16.w, top: 20.h),
+                      padding: EdgeInsets.only(
+                        left: 16.w,
+                        right: 16.w,
+                      ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -293,8 +295,7 @@ class _NewGoalRootState extends State<NewGoalRoot> {
       required String value,
       required TextEditingController controller}) {
     return Container(
-      padding:
-          EdgeInsets.only(left: 16.h, right: 16.h, top: 16.h, bottom: 16.h),
+      padding: EdgeInsets.only(left: 16.w, right: 16.w),
       margin: EdgeInsets.only(bottom: 16.h),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(18.r),
