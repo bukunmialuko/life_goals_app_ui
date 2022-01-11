@@ -78,6 +78,9 @@ class _Page1State extends State<Page1> {
                   right: 16.w,
                 ),
                 child: ListView(
+                  shrinkWrap: true,
+                  physics: const BouncingScrollPhysics(
+                      parent: AlwaysScrollableScrollPhysics()),
                   children: [
                     Padding(
                       padding: EdgeInsets.only(
@@ -231,11 +234,11 @@ class _Page1State extends State<Page1> {
                       ),
                     ),
                     ListView.separated(
-                      physics: const BouncingScrollPhysics(
+                      physics: const NeverScrollableScrollPhysics(
                           parent: AlwaysScrollableScrollPhysics()),
                       scrollDirection: Axis.vertical,
                       shrinkWrap: true,
-                      itemCount: 2,
+                      itemCount: 20,
                       itemBuilder: (c, i) {
                         return Card(
                           color: AppColors.lightBlue,
