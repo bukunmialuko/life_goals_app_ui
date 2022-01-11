@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:life_goals_app/src/res/asset_images.dart';
 import 'package:life_goals_app/src/res/colors.dart';
+import 'package:life_goals_app/src/res/font_family.dart';
 
 class Page1 extends StatefulWidget {
   const Page1({Key? key}) : super(key: key);
@@ -78,7 +79,7 @@ class _Page1State extends State<Page1> {
                   Text(
                     "2 Big Challenges",
                     style: TextStyle(
-                      color: Colors.black,
+                      color: AppColors.customBlack,
                       fontWeight: FontWeight.w600,
                       fontSize: 24.sp,
                     ),
@@ -86,7 +87,8 @@ class _Page1State extends State<Page1> {
                   Text(
                     "Ambitious person aren't you?",
                     style: TextStyle(
-                      color: Colors.black,
+                      color: AppColors.customBlack,
+                      fontFamily: FontFamily.nunito,
                       fontWeight: FontWeight.w600,
                       fontSize: 16.sp,
                     ),
@@ -196,6 +198,32 @@ class _Page1State extends State<Page1> {
                             width: 16.w,
                           );
                         },
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          EdgeInsets.only(right: 16.w, bottom: 20.h, top: 30.h),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Today’s Planning",
+                            style: TextStyle(
+                              color: AppColors.customBlack,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 24.sp,
+                            ),
+                          ),
+                          Text(
+                            "You have 3 actions to do",
+                            style: TextStyle(
+                              color: AppColors.customBlack,
+                              fontFamily: FontFamily.nunito,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 16.sp,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
