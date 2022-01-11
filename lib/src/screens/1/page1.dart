@@ -234,8 +234,7 @@ class _Page1State extends State<Page1> {
                       ),
                     ),
                     ListView.separated(
-                      physics: const NeverScrollableScrollPhysics(
-                          parent: AlwaysScrollableScrollPhysics()),
+                      physics: const NeverScrollableScrollPhysics(),
                       scrollDirection: Axis.vertical,
                       shrinkWrap: true,
                       itemCount: 20,
