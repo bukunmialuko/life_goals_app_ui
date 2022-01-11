@@ -1,8 +1,16 @@
 class AssetResources {
-  static const APP = "assets/svg/app.svg";
+  /// PNG
   static const PROFILE = "assets/png/profile.png";
-  static const MENU = "assets/svg/menu.svg";
-  static const BACK = "assets/svg/back.svg";
-  static const LADY_PG4 = "assets/png/lady_pg4.png";
-  static const MORE = "assets/svg/more.svg";
+
+  /// SVG
+  static const APP = "assets/svg/app.svg";
+  static const BAG = "assets/svg/bag.svg";
+  static const BELL_BADGE = "assets/svg/bell_badge.svg";
+  static const BULB = "assets/svg/bulb.svg";
+  static const CLOCK = "assets/svg/clock.svg";
+  static const CROSS = "assets/svg/cross.svg";
+  static const HEART_BAEAT = "assets/svg/heart_beat.svg";
+  static const HEART_PLUS = "assets/svg/heart_plus.svg";
+  static const HOME = "assets/svg/house-fill.svg";
+  static const TIMER = "assets/svg/timer.svg";
 }

@@ -17,6 +17,7 @@ class _Page1State extends State<Page1> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
               padding: EdgeInsets.only(top: 20.h, bottom: 47.h),
@@ -69,6 +70,30 @@ class _Page1State extends State<Page1> {
                 ],
               ),
             ),
+            Padding(
+              padding: EdgeInsets.only(
+                  left: 16.w, right: 16.w, top: 29.w, bottom: 20.h),
+              child: Column(
+                children: [
+                  Text(
+                    "2 Big Challenges",
+                    style: TextStyle(
+                      color: AppColors.purple,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 24.sp,
+                    ),
+                  ),
+                  Text(
+                    "Ambitious person aren't you?",
+                    style: TextStyle(
+                      color: AppColors.purple,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16.sp,
+                    ),
+                  ),
+                ],
+              ),
+            ),
             Expanded(
               child: Padding(
                 padding: EdgeInsets.only(left: 16.w, right: 16.w),
@@ -96,6 +121,7 @@ class _Page1State extends State<Page1> {
                               child: Column(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceAround,
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Column(
                                     mainAxisSize: MainAxisSize.min,
