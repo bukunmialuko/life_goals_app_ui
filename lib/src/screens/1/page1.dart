@@ -241,7 +241,7 @@ class _Page1State extends State<Page1> {
                       itemBuilder: (c, i) {
                         return Card(
                           color: AppColors.lightBlue,
-                          shadowColor: AppColors.shadowColor,
+                          shadowColor: AppColors.shadow,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12.r),
                           ),
@@ -282,19 +282,23 @@ class _Page1State extends State<Page1> {
                                 ],
                               ),
                               Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
                                   Padding(
                                     padding: EdgeInsets.only(
                                       left: 11.r,
                                       right: 11.r,
                                     ),
-                                    child: const Divider(),
+                                    child: Divider(
+                                      height: 2.h,
+                                      color: AppColors.border,
+                                    ),
                                   ),
                                   Padding(
                                     padding: EdgeInsets.only(
                                       left: 11.r,
                                       right: 8.r,
-                                      top: 3.r,
+                                      top: 3.h,
                                       bottom: 3.r,
                                     ),
                                     child: Row(
@@ -334,8 +338,7 @@ class _Page1State extends State<Page1> {
                                         ),
                                         Padding(
                                           padding: EdgeInsets.only(
-                                            left: 16.r,
-                                            right: 0,
+                                            right: 2.r,
                                           ),
                                           child: SvgPicture.asset(
                                             AssetResources.CARET_DOWN,
