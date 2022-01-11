@@ -8,6 +8,7 @@ class AssetResources {
   static const BELL_BADGE = "assets/svg/bell_badge.svg";
   static const BULB = "assets/svg/bulb.svg";
   static const CARET_DOWN = "assets/svg/caret_down.svg";
+  static const CHECK = "assets/svg/check.svg";
   static const CLOCK = "assets/svg/clock.svg";
   static const CROSS = "assets/svg/cross.svg";
   static const HEART_BAEAT = "assets/svg/heart_beat.svg";
