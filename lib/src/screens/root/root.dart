@@ -11,48 +11,71 @@ class RootWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: const NewGoalRoot(),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: Container(
-        padding: const EdgeInsets.all(7),
-        decoration: BoxDecoration(
-          color: Colors.white,
-          shape: BoxShape.circle,
-          boxShadow: [
-            BoxShadow(
-              offset: const Offset(0, -2),
-              color: Colors.black.withOpacity(.075),
-              blurRadius: 4,
-            )
-          ],
-        ),
-        child: FloatingActionButton(
-          backgroundColor: const Color(0xFF7B61FF),
-          onPressed: () {},
-          child: const Icon(
-            Icons.add,
-            color: Colors.white,
-          ),
-        ),
-      ),
-      bottomNavigationBar: Container(
-        decoration: BoxDecoration(
-          boxShadow: [
-            BoxShadow(
-              offset: const Offset(0, -2),
-              color: Colors.black.withOpacity(.075),
-              blurRadius: 4,
+      body: Stack(
+        alignment: AlignmentDirectional.topCenter,
+        children: [
+          ListView.builder(itemBuilder: (_, index) => Text('$index')),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              color: Colors.transparent,
+              height: 90,
+              child: Stack(
+                alignment: AlignmentDirectional.topCenter,
+                children: [
+                  Align(
+                    alignment: Alignment.bottomCenter,
+                    child: Container(
+                      height: 72,
+                      decoration: BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                            offset: const Offset(0, -2),
+                            color: Colors.black.withOpacity(.075),
+                            blurRadius: 4,
+                          ),
+                        ],
+                      ),
+                      child: BottomNavigationBar(
+                        elevation: 0,
+                        backgroundColor: Colors.white,
+                        items: const [
+                          BottomNavigationBarItem(
+                              icon: Icon(Icons.person), label: 'Person'),
+                          BottomNavigationBarItem(
+                              icon: Icon(Icons.person), label: 'Person'),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(7),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      shape: BoxShape.circle,
+                      boxShadow: [
+                        BoxShadow(
+                          offset: const Offset(0, -5),
+                          color: Colors.black.withOpacity(.075),
+                          blurRadius: 4,
+                        )
+                      ],
+                    ),
+                    child: FloatingActionButton(
+                      elevation: 0,
+                      backgroundColor: const Color(0xFF7B61FF),
+                      onPressed: () {},
+                      child: const Icon(
+                        Icons.add,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
-          ],
-        ),
-        child: BottomNavigationBar(
-          elevation: 0,
-          backgroundColor: Colors.white,
-          items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Person'),
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Person'),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
