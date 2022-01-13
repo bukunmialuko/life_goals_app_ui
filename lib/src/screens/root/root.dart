@@ -20,14 +20,14 @@ class RootWidget extends StatelessWidget {
             alignment: Alignment.bottomCenter,
             child: Container(
               color: Colors.transparent,
-              height: 90,
+              height: 90.h,
               child: Stack(
                 alignment: AlignmentDirectional.topCenter,
                 children: [
                   Align(
                     alignment: Alignment.bottomCenter,
                     child: Container(
-                      height: 72,
+                      height: 72.h,
                       decoration: const BoxDecoration(
                         color: Colors.white,
                       ),
@@ -36,7 +36,7 @@ class RootWidget extends StatelessWidget {
                   Align(
                     alignment: Alignment.bottomCenter,
                     child: Container(
-                      height: 72,
+                      height: 72.r,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         boxShadow: [
@@ -52,8 +52,8 @@ class RootWidget extends StatelessWidget {
                   Stack(
                     children: [
                       Container(
-                        height: 90,
-                        padding: const EdgeInsets.all(7),
+                        height: 90.h,
+                        // padding: const EdgeInsets.all(7),
                         decoration: BoxDecoration(
                           color: Colors.white,
                           shape: BoxShape.circle,
@@ -69,8 +69,8 @@ class RootWidget extends StatelessWidget {
                       Align(
                         alignment: Alignment.bottomCenter,
                         child: Container(
-                          height: 72,
-                          width: 100,
+                          height: 72.h,
+                          width: 100.w,
                           decoration: const BoxDecoration(
                             color: Colors.white,
                           ),
@@ -80,9 +80,9 @@ class RootWidget extends StatelessWidget {
                         alignment: Alignment.bottomCenter,
                         child: Container(
                             // padding: EdgeInsets.only(bottom: 16),
-                            margin: EdgeInsets.only(bottom: 23),
-                            height: 60,
-                            width: 60,
+                            margin: EdgeInsets.only(bottom: 23.h),
+                            height: 60.r,
+                            width: 60.r,
                             child: FloatingActionButton(
                               elevation: 0,
                               backgroundColor: const Color(0xFF7B61FF),
