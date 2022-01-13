@@ -270,7 +270,37 @@ class _HomeRootState extends State<HomeRoot> {
                                       ),
                                     ),
                                   ),
-                                  Expanded(child: Container()),
+                                  Expanded(
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        SizedBox(height: 19.h),
+                                        Text(
+                                          "Learn new skill",
+                                          style: TextStyle(
+                                            color: AppColors.customBlack,
+                                            fontWeight: FontWeight.w400,
+                                            fontSize: 14.sp,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 2.h,
+                                        ),
+                                        Text(
+                                          "Learn new skill",
+                                          style: TextStyle(
+                                            color: AppColors.customBlack,
+                                            fontWeight: FontWeight.w300,
+                                            fontSize: 12.sp,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
                                   Padding(
                                     padding: EdgeInsets.symmetric(
                                         horizontal: 7.r, vertical: 7.r),

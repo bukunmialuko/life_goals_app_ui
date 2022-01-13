@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -14,8 +16,24 @@ class RootWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
+        fit: StackFit.expand,
         children: [
-          NewGoalRoot(),
+          SafeArea(
+            child: Column(
+              children: [
+                const Expanded(child: HomeRoot()),
+
+                /// This size should be dynamic based on android and ios platform
+                (Platform.isAndroid)
+                    ? SizedBox(
+                        height: (78.h),
+                      )
+                    : SizedBox(
+                        height: (45.h),
+                      )
+              ],
+            ),
+          ),
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
