@@ -164,20 +164,65 @@ class RootWidget extends StatelessWidget {
                   Align(
                     alignment: Alignment.bottomCenter,
                     child: Container(
-                        // padding: EdgeInsets.only(bottom: 16),
-                        margin: EdgeInsets.only(bottom: 23.h),
-                        height: 60.r,
-                        width: 60.r,
-                        child: FloatingActionButton(
-                          elevation: 0,
-                          backgroundColor: const Color(0xFF7B61FF),
-                          onPressed: () {},
-                          child: const Icon(
-                            Icons.add,
-                            color: Colors.white,
-                          ),
-                        )),
+                      // padding: EdgeInsets.only(bottom: 16),
+                      margin: EdgeInsets.only(bottom: 23.h),
+                      height: 60.r,
+                      width: 60.r,
+                      child: FloatingActionButton(
+                        elevation: 0,
+                        backgroundColor: const Color(0xFF7B61FF),
+                        onPressed: () {},
+                        child: const Icon(
+                          Icons.add,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
                   ),
+                  Align(
+                    alignment: Alignment.topCenter,
+                    child: Container(
+                      margin: EdgeInsets.only(top: 30.h),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Expanded(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                const Icon(Icons.home),
+                                Text(
+                                  "Home",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 10.sp),
+                                )
+                              ],
+                            ),
+                          ),
+                          SizedBox(
+                            width: 72.w,
+                          ),
+                          Expanded(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                const Icon(Icons.notifications),
+                                Text(
+                                  "Notifications",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 10.sp),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  )
                 ],
               )
             ],
